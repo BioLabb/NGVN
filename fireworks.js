@@ -1,4 +1,3 @@
-
 var bits=90;
 var speed=33;
 var bangs=7;
