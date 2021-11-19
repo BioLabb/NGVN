@@ -36,6 +36,16 @@ body{
     text-transform: uppercase;
 }
 
+ .ball::after{
+    content: "";
+    width: 30px;
+    border:  1px solid black;
+    position: absolute;
+    top: 112%;
+    left: 37%;
+    transform: rotate(91deg);
+}
+
 .box{
     display: inline-block;
     margin-right: 15px;

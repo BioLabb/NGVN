@@ -11,7 +11,7 @@
         if(second > 5)
             second = 3;
         balls[i].style.backgroundColor = `rgb(${ARR_COLOR[i]},${OPACTY})`;
-        balls[i].appendChild(createNode("span",`rgb(${ARR_COLOR[i]},${OPACTY+0.2})`)); 
+        balls[i].appendChild(createNode("span",`rgb(${ARR_COLOR[i]},${OPACTY+0.2})`));
         balls[i].style.animation = `${animateName[iAnimate]} ${second}s ease-in-out infinite`
         iAnimate++;
         second++;
