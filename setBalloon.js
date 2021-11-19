@@ -23,6 +23,6 @@ function createNode(tag,color){
     node.appendChild(texNode);
     node.style.color = color;
     node.style.position = "absolute";
-    node.style.top = "115px";
+    node.style.top = "96%";
     return node;
 }

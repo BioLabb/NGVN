@@ -5,8 +5,6 @@
 }
 
 body{
-    min-width: 1516px;
-    min-height: 690px;
     background-image: linear-gradient(#FCA5F1,#B5FFFF);
 }
 .warp-page{
@@ -38,12 +36,17 @@ body{
     text-transform: uppercase;
 }
 
+.box{
+    display: inline-block;
+    margin-right: 15px;
+}
+
 .grid{
     display: grid;
 
 }
 
-.col-3{
+.col{
     grid-template-columns: 33% 33% 33%;
 }
 
@@ -124,5 +127,41 @@ body{
     }
     50% {
         transform: translate(-15px, 10px) rotate(10deg);
+    }
+}
+
+@media (max-width: 479px){
+
+    .col{
+        grid-template-columns: 100%;
+    }
+
+    .box{
+        display: block;
+    }
+
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        margin-bottom: 15px;
+    }
+    .item-2{
+        order:1;
+    }
+
+    .item-1{
+        order:2;
+    }
+
+    .item-3{
+        order:3;
+    }
+
+    .balls .ball{
+        width: 70px;
+        height: 90px;
     }
 }
