@@ -7,6 +7,10 @@
 body{
     background-image: linear-gradient(#FCA5F1,#B5FFFF);
 }
+
+audio{
+    display: none;
+}
 .warp-page{
     max-width: 1510px;
     min-height: 690px;
